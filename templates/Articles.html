@@ -9,7 +9,7 @@
             <tr>
                 <th>ID</th>
                 <th>TITLE</th>
-                <th>DESCRIPTION</th>
+                
                 <th>AUTHOR</th>
                 <th>DATE</th>
                 <th>EDIT</th>
@@ -20,8 +20,7 @@
       
           <tr>
               <td>{{article['id']}}</td>
-              <td>{{article['title']}}</td>
-              <td>{{article['body']}}</td>
+              <td><a href="/article/{{article['id']}}" target="_blank"> {{article['title']}}</a></td>
               <td>{{article['author']}}</td>
               <td>{{article['create_date']}}</td>
               <td><a class="btn btn-warning" href="#" role="button">EDIT</a></td>
@@ -34,7 +33,7 @@
             <tr>
               <th>ID</th>
               <th>TITLE</th>
-              <th>DESCRIPTION</th>
+              
               <th>AUTHOR</th>
               <th>DATE</th>
               <th>EDIT</th>
@@ -43,6 +42,6 @@
 	</table>
       
     </p>    
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <a class="btn btn-primary btn-lg" href="/add_article" role="button">추가하기</a>
   </div>
 {% endblock %}
